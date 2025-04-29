@@ -1,0 +1,40 @@
+@import url('./global.css');
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 0 200px;
+}
+header h1 {
+    font-size: 24px;
+    color: var(--color-light-text-color);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 92px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 21px;
+}
+.buttons-header {
+    display: flex;
+    align-items: center;
+    width: 283px;
+    gap: 20px;
+}
+.btn-became-member {
+    width: 220px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: var(--color-primary-color);
+    color: var(--color-light-text-color);
+    gap:30px;
+}
