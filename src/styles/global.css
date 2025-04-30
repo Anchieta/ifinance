@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--color-dark-background-color);
 }
 a {
@@ -37,5 +37,7 @@ a {
     --color-light-gray-1: #FAFAFA;
     --color-light-gray-2: #ECECEC;
 
+    --font-size-20: 20px;
+    --font-size-14: 14px;
 
 }
