@@ -5,7 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid white;
-    padding: 0 200px;
+    padding: 0 100px;
 }
 header h1 {
     font-size: 24px;
@@ -86,10 +86,13 @@ main .main-img {
 }
 
 /* Session */
-.better-strategy {
+.better-strategy-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     border: 1px solid green;
+    padding-top: 98.1px;
     margin-top: 51px;
 }
 .better-strategy-content h2 {
@@ -105,4 +108,47 @@ main .main-img {
     text-align: center;
     width: 470px;
     margin-top: 10px;
+}
+
+.teste{
+    display: flex;
+    justify-content: center;
+}
+
+.better-strategy-cards {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /*3 colunas de tamanho igual*/
+    
+}
+.better-strategy-card {
+    border: 1px solid var(--color-light-text-color);
+    width: 328px;
+    /* background-color: lightgray; */
+    padding: 35px;
+}
+.card-content {
+    /* padding: 24.35px 18.79px 24.35px 13.92px; */
+    /* border: 1px solid red; */
+}
+.card {
+    display: flex;
+    align-items: center;
+    color: var(--color-light-text-color);
+    /* border: 1px solid black; */
+}
+.card-img {
+    width: 33.4;
+    margin-left: 10px;
+    margin-right: 15px;
+    /* border: 1px solid blue; */
+}
+.card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    width: 213px;
+}
+.card p {
+    font-size: 14px;
+    margin-top: 5px;
 }
