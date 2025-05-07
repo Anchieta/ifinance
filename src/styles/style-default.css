@@ -1,0 +1,137 @@
+@import url('./global.css');
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: 92px;
+    padding: 0 100px;
+}
+header h1 {
+    font-size: 24px;
+    color: var(--color-light-text-color);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;  
+    gap: 21px;
+}
+.buttons-header {
+    display: flex;
+    align-items: center;
+    width: 283px;
+    gap: 20px;
+    cursor: pointer;
+}
+.btn-became-member {
+    width: 220px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: var(--color-primary-color);
+    color: var(--color-light-text-color);
+    cursor: pointer;
+    gap:30px;
+}
+.menu-toggle {
+    display: none;
+}
+.menu-toggle span{
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-light-text-color);
+    margin: 3px 0;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    /* border: 1px solid red; */
+}
+.main-content h2 {
+    color: var(--color-light-text-color);
+    font-size: 58px;
+    font-weight: 800;
+    width: 529px;
+}
+.main-content p {
+    color: var(--color-light-text-color);
+    font-size: var(--font-size-20);
+    width: 336px;
+    margin-top: 24.35px;
+}
+.btn-main {
+    display: flex;
+    margin-top: 35px;
+    gap: 10px;
+}
+.btn-main button {
+    color: var(--color-light-text-color);
+    padding: 15px 36px;
+    border-radius: 37px;
+    cursor: pointer;
+}
+.btn-main-blue {
+    background-color: var(--color-primary-color);
+}
+.btn-main-black {
+    border: 1px solid var(--color-light-text-color);
+    background-color: transparent;
+}
+
+/* --------- Mobile --------- */
+@media (max-width: 391px) {
+
+    header {
+        padding: 0 20px;
+        height: 72px;
+    }
+    nav {
+        display: none;
+    }
+    .buttons-header {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+
+        align-items: start;
+        margin: 0;
+        gap: 0px;
+    }
+    .main-img img {
+        width: 90%;
+    }
+    .main-content h2 {
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+    }
+    .main-content p {
+        width: 100%;
+        text-align: center;
+    }
+    .btn-main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
